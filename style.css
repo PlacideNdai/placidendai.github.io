@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding:0;
+    color:white;
+}
+
+body{
+    background-color: black;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
