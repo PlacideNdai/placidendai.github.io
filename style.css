@@ -5,9 +5,105 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(25,25,25);
     position: absolute;
     height: 100vh;
     width: 100%;
-    background-repeat: no-repeat;
+}
+
+#conhead{
+    background: rgb(166, 108, 0);
+    box-shadow: 2px 2px rgb(90, 58, 0);
+    position:fixed;
+    width:100%;
+    height:20%;
+    padding:10px;
+}
+
+/* all body bodys */
+.allcontent{
+    position:absolute;
+    top:10%;
+    background:rgb(25, 25, 25);
+    width:100%;
+}
+
+#sbody{
+    padding:10px;
+}
+
+.hobbies{
+    background:rgb(0, 0, 0);
+    border-radius:2px;
+    box-shadow: 0.5px 2px rgb(167, 167, 167);
+    padding:10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobbies > span {
+    position: relative;
+    display: inline-block;
+    margin:2px;
+    width:20%;
+    font-size: 150%;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+span > a:link{
+    text-decoration-line:none;
+}
+
+.biosec{
+    background:rgb(80, 61, 10);
+    position: relative;
+    margin:10px;    
+    padding:10px;
+    border-radius:5px;
+    width:20%;
+    text-align: center;
+}
+
+.bio{
+    background:rgb(73, 9, 103);
+    border-radius:10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bio:hover{
+    animation: shake .2s 2 ease;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    to{
+        transform: translatey(-5px);
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    
+body{
+    background-color:rgb(24, 24, 24);
+    position: absolute;
+    height: 100vh;
+    width: 100%; 
+}
+
+.biosec{
+    background:rgb(80, 61, 10);
+    position: relative;
+    margin:10px;    
+    padding:10px;
+    width:90%;
+    border-radius:5px;
+}
+
+
 }
