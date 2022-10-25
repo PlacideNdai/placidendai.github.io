@@ -16,8 +16,9 @@ body{
     box-shadow: 2px 2px rgb(90, 58, 0);
     position:fixed;
     width:100%;
-    height:20%;
+    height:8%;
     padding:10px;
+    /* z-index: 1; */
 }
 
 /* all body bodys */
@@ -69,7 +70,7 @@ span > a:link{
 .bio{
     background:rgb(73, 9, 103);
     border-radius:10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:serif;
 }
 
 .bio:hover{
@@ -84,11 +85,58 @@ span > a:link{
 }
 
 
+.music{
+    height: 75px;
+    position: absolute;
+    top:15%;
+    border-radius:10px;
+    width:35%;
+    padding:10px;
+    right:2%;
+}
+
+#chess{
+    background:rgb(39, 39, 39);
+    border-radius:10px;
+    padding:10px;
+    margin:5px;
+    font-family:serif;
+    width:30%;
+    position:absolute;
+    right:2%;
+}
 
 
+
+/* phone screens */
 
 @media only screen and (max-width: 600px){
+   
+
+
+
     
+    #chess{
+        position:absolute;
+        left:10/2%;
+        background:rgb(39, 39, 39);
+        border-radius:10px;
+        padding:10px;
+        margin:5px;
+        font-family:serif;
+        width:90%;
+    }
+
+    .music{
+        height: 75px;
+        position: relative;
+        border-radius:10px;
+        width:98%;
+        padding:10px;
+        right:2%;
+    }
+        
+
 body{
     background-color:rgb(24, 24, 24);
     position: absolute;
