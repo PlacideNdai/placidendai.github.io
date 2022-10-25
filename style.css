@@ -27,6 +27,7 @@ body{
     top:10%;
     background:rgb(25, 25, 25);
     width:100%;
+    height:49%;
 }
 
 #sbody{
@@ -88,9 +89,10 @@ span > a:link{
 .music{
     height: 75px;
     position: absolute;
-    top:15%;
+    top:20%;
     border-radius:10px;
     width:35%;
+    padding:10px;
     padding:10px;
     right:2%;
 }
@@ -104,6 +106,55 @@ span > a:link{
     width:30%;
     position:absolute;
     right:2%;
+    top:50%;
+}
+
+#drawing{
+    background:rgb(39, 39, 39);
+    border-radius:10px;
+    padding:10px;
+    margin:5px;
+    font-family:serif;
+    width:30%;
+    position:absolute;
+    right:2%;
+    top:110%;
+}
+
+#flower{
+    background:rgb(39, 39, 39);
+    border-radius:10px;
+    padding:10px;
+    margin:5px;
+    font-family:serif;
+    width:30%;
+    position:absolute;
+    right:2%;
+    top:155%;
+}
+
+
+/* now editing */
+#others{
+    background:rgb(39, 39, 39);
+    border-radius:10px;
+    padding:10px;
+    margin:5px;
+    font-family:serif;
+    width:30%;
+    position:absolute;
+    right:2%;
+    top:195%;
+}
+
+#footer{
+    position:fixed;
+    bottom:2%;
+    padding-left:15px;
+}
+
+#contacts > a:link{
+    text-decoration-line:none;
 }
 
 
@@ -112,10 +163,60 @@ span > a:link{
 
 @media only screen and (max-width: 600px){
    
+    #footer{
+        position:absolute;
+        height: 10%;
+        /* background:red; */
+        width:90%;
+        border-radius:5px;
+        left: 1%;
+        bottom:-140%;
+        text-align: center;
+    }
+    
 
-
+    #others{
+        background:rgb(39, 39, 39);
+        border-radius:10px;
+        padding:10px;
+        margin:5px;
+        font-family:serif;
+        width:90%;
+        position:absolute;
+        right:2%;
+        top:185%;
+        left:10/2%;
+    }
 
     
+    #flower{
+        background:rgb(39, 39, 39);
+        border-radius:10px;
+        padding:10px;
+        margin:5px;
+        font-family:serif;
+        width:90%;
+        position:absolute;
+        right:2%;
+        left:10/2%;
+        top:150%;
+    }
+    
+
+    #drawing{
+        background:rgb(39, 39, 39);
+        border-radius:10px;
+        padding:10px;
+        margin:5px;
+        font-family:serif;
+        width:90%;
+        position:absolute;
+        right:2%;
+        top:110%;
+        left:10/2%;
+    }
+
+
     #chess{
         position:absolute;
         left:10/2%;
@@ -125,6 +226,7 @@ span > a:link{
         margin:5px;
         font-family:serif;
         width:90%;
+        top:60%;
     }
 
     .music{
