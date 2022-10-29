@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding:0;
@@ -57,6 +59,14 @@ body::-webkit-scrollbar{
     font-size: 150%;
     padding-left:5%;
     padding-right:5%;
+}
+
+.hobbies > span:hover {
+    background:radial-gradient(rgb(36, 33, 87),rgb(75, 75, 75));
+    border-radius: 10px;
+    text-align: center;
+    height:100%;
+    /* cursor:pointer; */
 }
 
 span > a:link{
@@ -189,7 +199,7 @@ span > a:link{
         width:90%;
         position:absolute;
         right:2%;
-        top:185%;
+        top:149%;
         left:10/2%;
     }
 
@@ -204,7 +214,7 @@ span > a:link{
         position:absolute;
         right:2%;
         left:10/2%;
-        top:150%;
+        top:123%;
     }
     
 
@@ -217,7 +227,7 @@ span > a:link{
         width:90%;
         position:absolute;
         right:2%;
-        top:110%;
+        top:98%;
         left:10/2%;
     }
 
@@ -226,21 +236,23 @@ span > a:link{
         position:absolute;
         left:10/2%;
         background:rgb(39, 39, 39);
-        border-radius:10px;
+        border-radius:5px;
         padding:10px;
         margin:5px;
         font-family:serif;
         width:90%;
-        top:60%;
+        top:65%;
     }
 
     .music{
         height: 75px;
-        position: relative;
+        position: absolute;
         border-radius:10px;
-        width:98%;
+        width:90%;
         padding:10px;
-        right:2%;
+        right:4%;
+        left:10/2%;
+        top:45%;
     }
         
 
@@ -252,12 +264,12 @@ body{
 }
 
 .biosec{
-    background:rgb(80, 61, 10);
-    position: relative;
-    margin:10px;    
-    padding:10px;
+    background:rgb(39,39,39);
+    /* border:1px white solid; */
+    /* height:15%; */
     width:90%;
-    border-radius:5px;
+    left:-2%;
+    
 }
 
 
