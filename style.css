@@ -4,6 +4,7 @@
     margin: 0;
     padding:0;
     color:white;
+    user-select: none;
 }
 
 body{
@@ -25,16 +26,16 @@ body::-webkit-scrollbar{
     width:100%;
     height:8%;
     padding:10px;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 /* all body bodys */
 .allcontent{
     position:absolute;
-    top:10%;
+    top:15%;
     background:rgb(25, 25, 25);
     width:100%;
-    height:49%;
+    height:60%;
 }
 
 #sbody{
@@ -176,7 +177,7 @@ span > a:link{
 
 /* phone screens */
 
-@media only screen and (max-width: ){
+@media only screen and (max-width: 800px ){
     
 }
 
@@ -189,7 +190,7 @@ span > a:link{
         width:90%;
         border-radius:5px;
         left: 1%;
-        bottom:-140%;
+        top:-4%;
         text-align: center;
     }
     
@@ -203,7 +204,7 @@ span > a:link{
         width:90%;
         position:absolute;
         right:2%;
-        top:187%;
+        top:205%;
         left:10/2%;
     }
 
@@ -218,7 +219,7 @@ span > a:link{
         position:absolute;
         right:2%;
         left:10/2%;
-        top:155%;
+        top:170%;
     }
     
 
@@ -231,7 +232,7 @@ span > a:link{
         width:90%;
         position:absolute;
         right:2%;
-        top:122%;
+        top:135%;
         left:10/2%;
     }
 
@@ -245,7 +246,7 @@ span > a:link{
         margin:5px;
         font-family:serif;
         width:90%;
-        top:77%;
+        top:90%;
     }
 
     .music{
