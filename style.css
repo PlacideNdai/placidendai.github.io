@@ -96,6 +96,7 @@ span > a:link{
 .music{
     width: 400px;
     padding:50px 0 0 10px;
+    user-select:all;
 }
 
 #chess,#drawing ,#flower , #others{
@@ -139,6 +140,14 @@ span > a:link{
     text-decoration-line:none;
 }
 
+#smile{
+    font-size: 150%;
+    text-align: center;
+}
+
+#smile:hover{
+    /* add some animation */
+}
 
 
 /* phone screens */
@@ -217,6 +226,7 @@ span > a:link{
 
     .music{
         width: 90%;
+        user-select: auto;
 
     }
         
