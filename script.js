@@ -1,3 +1,3 @@
 window.onload = ()=>{
-    alert( "The site my appear broken on certain phones.")
+    alert( "The site may appear broken on certain phones.")
 }

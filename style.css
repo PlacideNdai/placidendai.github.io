@@ -8,11 +8,7 @@
 }
 
 body{
-    background-color: rgb(25,25,25);
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-
+    background:black;
 }
 
 body::-webkit-scrollbar{
@@ -20,74 +16,68 @@ body::-webkit-scrollbar{
 }
 
 #conhead{
-    background: rgb(166, 108, 0);
-    box-shadow: 2px 2px rgb(90, 58, 0);
+    box-shadow: 2px 2px #333;
     position:fixed;
     width:100%;
     padding:10px;
     z-index: 1;
+    top:0;
+    background-color: #222;
 }
 
 /* all body bodys */
 .allcontent{
-    position:absolute;
-    top:15%;
-    background:rgb(25, 25, 25);
-    width:100%;
-    height:60%;
+    padding:10px;
+    margin:10px;
+    background:#222;
+    position: absolute;
+    top:10%;
+    width:80%;
+    left:10%;
+    box-shadow: 0px 4px #333;
 }
 
 #sbody{
+    
+    background: #333;
+    box-shadow: 0px 4px #444;
     padding:10px;
 }
 
 .hobbies{
-    background:rgb(0, 0, 0);
-    border-radius:2px;
-    box-shadow: 0.5px 2px rgb(167, 167, 167);
-    padding:10px;
-    display:flex;
+    display: flex;
+    gap: 20%;
     align-items: center;
-    justify-content: center;
-    align-content: center;
+    font-size: 120%;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .hobbies > span {
-    position: relative;
-    display: inline-block;
-    margin:2px;
-    width:20%;
-    font-size: 150%;
-    padding-left:5%;
-    padding-right:5%;
+
+    box-shadow: 0px 1px #555;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .hobbies > span:hover {
-    background:radial-gradient(rgb(36, 33, 87),rgb(75, 75, 75));
-    border-radius: 10px;
-    text-align: center;
-    height:100%;
-    /* cursor:pointer; */
+    background: rgb(49, 6, 59)
 }
 
 span > a:link{
     text-decoration-line:none;
+    border-radius:40%;
 }
 
 .biosec{
-    background:rgb(80, 61, 10);
-    position: relative;
-    margin:10px;    
+    background-color: #222;
     padding:10px;
+    margin:10px;
     border-radius:5px;
-    width:20%;
-    text-align: center;
 }
 
 .bio{
-    background:rgb(73, 9, 103);
-    border-radius:10px;
-    font-family:serif;
+
 }
 
 .bio:hover{
@@ -98,75 +88,51 @@ span > a:link{
 @keyframes shake {
     to{
         transform: translatey(-5px);
+        color:red;
     }
 }
 
 
 .music{
-    height: 75px;
-    position: absolute;
-    top:20%;
-    border-radius:10px;
-    width:35%;
-    padding:10px;
-    padding:10px;
-    right:2%;
+    width: 400px;
+    padding:50px 0 0 10px;
 }
 
-#chess{
-    background:rgb(39, 39, 39);
-    border-radius:10px;
+#chess,#drawing ,#flower , #others{
+    background-color: #333;
     padding:10px;
-    margin:5px;
-    font-family:serif;
-    width:30%;
-    position:absolute;
-    right:2%;
-    top:45%;
+    margin-top: 20px;
+    border-radius:5px;
+    width:35%;
+    box-shadow:0px 3px #444;
+}
+
+#chess:hover,#drawing:hover ,#flower:hover , #others:hover{
+    background-color: #555;
+}
+    
+#chess{
+
 }
 
 #drawing{
-    background:rgb(39, 39, 39);
-    border-radius:10px;
-    padding:10px;
-    margin:5px;
-    font-family:serif;
-    width:30%;
-    position:absolute;
-    right:2%;
-    top:95%;
+
 }
 
 #flower{
-    background:rgb(39, 39, 39);
-    border-radius:10px;
-    padding:10px;
-    margin:5px;
-    font-family:serif;
-    width:30%;
-    position:absolute;
-    right:2%;
-    top:130%;
+    
 }
 
 
-/* now editing */
 #others{
-    background:rgb(39, 39, 39);
-    border-radius:10px;
-    padding:10px;
-    margin:5px;
-    font-family:serif;
-    width:30%;
-    position:absolute;
-    right:2%;
-    top:165%;
+
 }
 
 #footer{
     position:fixed;
     bottom:2%;
     padding-left:15px;
+    right:20%;
 }
 
 #contacts > a:link{
@@ -184,98 +150,85 @@ span > a:link{
 @media only screen and (max-width: 600px){
    
     #footer{
-        position:absolute;
-        height: 10%;
-        /* background:red; */
-        width:90%;
-        border-radius:5px;
-        left: 1%;
+        position: absolute;
         top:-4%;
-        text-align: center;
+        margin:auto;
+    }
+
+    #conhead{
+        position:fixed;
+        margin-bottom:5px;
+        padding-bottom:5px;
+    }
+
+    .allcontent{
+        width:98%;
+        margin-top:20px;
+        position: absolute;
+        margin:auto;
+        left:1%;
+        top:20%;
+        padding:0;
     }
     
+    #sbody{
+        margin:auto;
+        padding:5px;
+        position: relative;
+        width:90%;
+        margin-top:2%;
+
+    }
+
+    .hobbies{
+        padding:0;
+        width:98%;
+        gap:15%;
+        display: flex;
+        margin:auto;
+    }
+
+    #others, #drawing,#chess,#flower{
+        padding:5%;
+        width:83%;
+        margin:auto;
+        margin-top:5%;
+    }
 
     #others{
-        background:rgb(39, 39, 39);
-        border-radius:10px;
-        padding:10px;
-        margin:5px;
-        font-family:serif;
-        width:90%;
-        position:absolute;
-        right:2%;
-        top:205%;
-        left:10/2%;
+  
+
     }
 
     
     #flower{
-        background:rgb(39, 39, 39);
-        border-radius:10px;
-        padding:10px;
-        margin:5px;
-        font-family:serif;
-        width:90%;
-        position:absolute;
-        right:2%;
-        left:10/2%;
-        top:170%;
+
     }
     
 
     #drawing{
-        background:rgb(39, 39, 39);
-        border-radius:10px;
-        padding:10px;
-        margin:5px;
-        font-family:serif;
-        width:90%;
-        position:absolute;
-        right:2%;
-        top:135%;
-        left:10/2%;
+
     }
 
 
     #chess{
-        position:absolute;
-        left:10/2%;
-        background:rgb(39, 39, 39);
-        border-radius:10px;
-        padding:10px;
-        margin:5px;
-        font-family:serif;
-        width:90%;
-        top:90%;
+ 
     }
 
     .music{
-        height: 75px;
-        position: absolute;
-        border-radius:10px;
-        width:90%;
-        padding:10px;
-        right:2%;
-        left:10/2%;
-        top:70%;
+        width: 90%;
+
     }
         
 
-body{
-    background-color:rgb(24, 24, 24);
-    position: absolute;
-    height: 100vh;
-    width: 100%; 
-}
+    body{
 
-.biosec{
-    background:rgb(39,39,39);
-    /* border:1px white solid; */
-    /* height:15%; */
-    width:90%;
-    left:-2%;
+    }
+
+    .biosec{
+
     
-}
+    }
 
 
 }
