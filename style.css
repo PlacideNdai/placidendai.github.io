@@ -3,81 +3,117 @@
 *{
     margin: 0;
     padding:0;
-    color:white;
+    color:black;
     user-select: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --secondcolor:#333;
+    --firstcolor: black;
+    --thirdcolor:transparent;
+    --pagecolor: white;
+    --headcolor: white;
+    --light:#777;
 }
 
 body{
-    background:black;
+    background:rgb(63, 63, 63);
+    background-image: url(hello.JPG);
 }
+
 
 body::-webkit-scrollbar{
     display: none;
 }
 
+.name{
+    cursor:pointer;
+    width:20%;
+    color:var(--headcolor)
+}
+
+#greet{
+    color:var(--headcolor);
+}
+
+.name:hover{
+    box-shadow: var(--thirdcolor);
+    cursor:progress;
+    border-radius:10px;
+    text-align: center;
+}
+
+#header{
+    height: auto;
+}
+
 #conhead{
-    box-shadow: 2px 2px #333;
+    box-shadow: 2px 2px rgb(100, 68, 37);
     position:fixed;
     width:100%;
     padding:10px;
     z-index: 1;
     top:0;
-    background-color: #222;
+    background-color: var(--firstcolor);
+}
+
+a{
+    color:var(--headcolor);
 }
 
 /* all body bodys */
 .allcontent{
     padding:10px;
     margin:10px;
-    background:#222;
+    background:var(--secondcolor);
     position: absolute;
-    top:10%;
+    top:20%;
     width:80%;
     left:10%;
-    box-shadow: 0px 4px #333;
+    box-shadow: 0px 4px var(--thirdcolor);
+    border-radius:5px;
 }
 
-#sbody{
-    
-    background: #333;
-    box-shadow: 0px 4px #444;
+
+#sbody{ 
+    background:transparent;
+    box-shadow: 0px 4px var(--thirdcolor);
     padding:10px;
 }
 
 .hobbies{
     display: flex;
-    gap: 20%;
+    gap: 18%;
     align-items: center;
     font-size: 120%;
     text-align: center;
     border-radius: 5px;
+    left:5%;
+    z-index: 2;
+    margin-top:10px;
 }
 
 .hobbies > span {
 
-    box-shadow: 0px 1px #555;
+    box-shadow: 0px 1px var(--thirdcolor);
     text-align: center;
     border-radius: 5px;
+    background:rgb(11, 61, 16);
+    /* padding:3px; */
+    width:5%;
 }
 
 .hobbies > span:hover {
     background: rgb(49, 6, 59)
 }
 
-span > a:link{
-    text-decoration-line:none;
-    border-radius:40%;
-}
-
 .biosec{
-    background-color: #222;
+    color:var(--headcolor);
+    background:var(--light);
     padding:10px;
     margin:10px;
     border-radius:5px;
-}
-
-.bio{
-
 }
 
 .bio:hover{
@@ -93,47 +129,58 @@ span > a:link{
 }
 
 
-.music{
-    width: 400px;
-    padding:50px 0 0 10px;
-    user-select:all;
-}
-
-#chess,#drawing ,#flower , #others{
-    background-color: #333;
+.involved{
+    margin:10px;
+    background:var(--light);
     padding:10px;
-    margin-top: 20px;
     border-radius:5px;
-    width:35%;
-    box-shadow:0px 3px #444;
+    text-align: center;
 }
 
-#chess:hover,#drawing:hover ,#flower:hover , #others:hover{
-    background-color: #555;
+.otherpro{
+    padding:10px;
+    margin:10px auto;
+    background: #222;
+    color:white;
+    border-radius:5px;
+}
+
+
+/* page page */
+.page{
+    border-radius:5px;
+    margin:auto;
+    color:var(--pagecolor);
+    margin-top:10px;
+    padding:10px;
+    margin:10px;
+    background:var(--secondcolor);
+    position: absolute;
+    top:15%;
+    width:80%;
+    left:10%;
+    box-shadow: 0px 4px var(--thirdcolor);
+}
+.vol{
+    background:var(--secondcolor);
+    width: 25%;
+    padding:10px;
+    text-align: center;
+    margin:5px;
+    display: inline-block;
+    border-radius: 5px;
+    height:200px;
+    color:var(--headcolor);
+    text-align: center;
 }
     
-#chess{
-
-}
-
-#drawing{
-
-}
-
-#flower{
-    
-}
-
-
-#others{
-
-}
 
 #footer{
     position:fixed;
     bottom:2%;
     padding-left:15px;
     right:20%;
+    color:var(--headcolor);
 }
 
 #contacts > a:link{
@@ -145,23 +192,26 @@ span > a:link{
     text-align: center;
 }
 
-#smile:hover{
-    /* add some animation */
-}
-
 
 /* phone screens */
-
-@media only screen and (max-width: 800px ){
-    
-}
-
 @media only screen and (max-width: 600px){
    
+    .vol{
+        background:var(--secondcolor);
+        width: 92%;
+        padding:10px;
+        text-align: center;
+        margin:5px;
+        display: flex;
+        border-radius: 5px;
+        color:var(--headcolor)
+    }
+
     #footer{
         position: absolute;
         top:-4%;
         margin:auto;
+        color: var(--headcolor);
     }
 
     #conhead{
@@ -176,7 +226,7 @@ span > a:link{
         position: absolute;
         margin:auto;
         left:1%;
-        top:20%;
+        top:25%;
         padding:0;
     }
     
@@ -186,59 +236,20 @@ span > a:link{
         position: relative;
         width:90%;
         margin-top:2%;
+    }
 
+    .page{
+        margin:10px auto;
     }
 
     .hobbies{
-        padding:0;
+        padding:5px;
         width:98%;
         gap:15%;
         display: flex;
         margin:auto;
+        font-size:90%;
+        text-align:center;
     }
-
-    #others, #drawing,#chess,#flower{
-        padding:5%;
-        width:83%;
-        margin:auto;
-        margin-top:5%;
-    }
-
-    #others{
-  
-
-    }
-
-    
-    #flower{
-
-    }
-    
-
-    #drawing{
-
-    }
-
-
-    #chess{
- 
-    }
-
-    .music{
-        width: 90%;
-        user-select: auto;
-
-    }
-        
-
-    body{
-
-    }
-
-    .biosec{
-
-    
-    }
-
 
 }
