@@ -138,3 +138,17 @@ randomtab.onclick = () =>{
         randompage.style.display = 'none';
     }
 }
+
+
+// animation when scrolling
+let cohead = document.querySelector('#conhead');
+
+window.addEventListener('scroll', (e)=>{
+    let scrolly = this.scrollY;
+    if(scrolly > 20){
+        cohead.style.height = 'auto';
+
+    }else{
+        cohead.style.height = "30%";
+    }
+});
