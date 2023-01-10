@@ -1,0 +1,89 @@
+@media only screen and (max-width: 380px) {
+  
+    body{
+      width:99%;
+    }
+  
+    #allhead{
+      font-size:100%;
+      height: 80%;
+    }
+  
+    .emote{
+        position:absolute;
+        top:17.5%;
+        left: 50%;
+    }
+  
+    .allbody{
+        width:96%;
+        display: grid;
+        position: absolute;
+        height:auto;
+        top: 90%;
+    }
+
+    .fpart{
+        width:100%;
+        height: 350%;
+    }
+
+    .firstsp{
+        position: absolute;
+        height: 100%;
+        margin-top:40px;
+    }
+
+    .phead{
+        width:100%;
+        margin-left:1%;
+        padding-top:0;
+    }
+
+
+    .spart{
+        position: absolute;
+        width:100%;
+        margin:auto;
+        height:300%;
+        top:750%;
+        left:1px;
+        display: grid;
+    }
+
+    .secondsp{
+        border-top:1px solid black;
+        padding:5px;
+        margin:auto;
+
+    }
+
+    .example{
+        top:0;
+        width:100%;
+        margin-left:1.5%;
+    }
+
+    .secondspan{
+        margin:auto;
+        padding-left:7%;
+    }
+
+
+    #SecondPage{
+        position: absolute;
+        top:300%;
+        width:94%;
+    }
+
+    #stories{
+        width:100%;
+    }
+
+    footer{
+        width:100%;
+    }
+ 
+  
+      
+}

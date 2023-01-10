@@ -1,266 +1,132 @@
-
-
 *{
+    padding: 0;
     margin: 0;
-    padding:0;
-    color:white;
-    user-select: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Teko', sans-serif;
 }
-
-:root{
-    --secondcolor:#333;
-    --firstcolor: black;
-    --thirdcolor:transparent;
-    --pagecolor: white;
-    --headcolor: white;
-    --light:#777;
-    --colorfortext: white;
-}
-
-body{
-    background:rgb(63, 63, 63);
-    background-image: url(Moon.png);
-}
-
 
 body::-webkit-scrollbar{
-    display: none;
+  display: none;
 }
 
-.name{
-    cursor:pointer;
-    width:20%;
-    color:var(--headcolor)
-}
-
-#greet{
-    color:var(--headcolor);
-}
-
-.name:hover{
-    box-shadow: var(--thirdcolor);
-    cursor:progress;
-    border-radius:10px;
-    text-align: center;
-}
-
-#header{
-    height: auto;
-}
-
-#conhead{
-    box-shadow: 2px 2px rgb(100, 68, 37);
-    position:fixed;
+#allhead{
+    color:white;
+    background: rgb(20, 20, 73);
+    position:absolute;
     width:100%;
-    height: 30%;
-    padding:10px;
-    z-index: 1;
-    top:0;
-    background-color: var(--firstcolor);
-}
-
-
-a{
-    color:var(--headcolor);
-}
-
-/* all body bodys */
-.allcontent{
-    padding:10px;
-    margin:10px;
-    background:var(--secondcolor);
-    position: absolute;
-    top:36%;
-    width:80%;
-    left:10%;
-    box-shadow: 0px 4px var(--thirdcolor);
-    border-radius:5px;
-    
-}
-
-
-#sbody{ 
-    background:transparent;
-    box-shadow: 0px 4px var(--thirdcolor);
-    padding:10px;
-}
-
-.hobbies{
-    display: flex;
-    gap: 18%;
-    align-items: center;
-    font-size: 120%;
-    text-align: center;
-    border-radius: 5px;
-    left:5%;
-    z-index: 2;
-    margin-top:10px;
-}
-
-.hobbies > span {
-
-    box-shadow: 0px 1px var(--thirdcolor);
-    text-align: center;
-    border-radius: 5px;
-    background:rgb(11, 61, 16);
-    /* padding:3px; */
-    width:5%;
-    
-}
-
-.hobbies > span:hover {
-    background: rgb(49, 6, 59)
-}
-
-.biosec{
-    color:var(--headcolor);
-    background:var(--light);
-    padding:10px;
-    margin:10px;
-    border-radius:5px;
-}
-
-.bio:hover{
-    animation: shake .2s 2 ease;
+    height:80%;
     cursor: pointer;
 }
 
-@keyframes shake {
-    to{
-        transform: translatey(-5px);
-        color:red;
-    }
+#allhead > h1{
+    font-size:300%;
+    padding:10px;
 }
 
-
-.involved{
-    margin:10px;
-    background:var(--light);
+#allhead > h3{
+    font-size:200%;
     padding:10px;
-    border-radius:5px;
-    text-align: center;
+    color:green;
+    transition: 1s ;
 }
 
-.otherpro{
-    padding:10px;
-    margin:10px auto;
-    background: #222;
-    color:white;
-    border-radius:5px;
+#allhead > h3:hover{
+    color:yellow;
 }
 
-
-/* page page */
-.page{
-    border-radius:5px;
-    margin:auto;
-    color:var(--pagecolor);
-    margin-top:10px;
+#allhead > p, #allhead > span{
     padding:10px;
-    margin:10px;
-    background:var(--secondcolor);
+    font-size: 150%;
+}
+
+#allhead > h2{
+    padding:20px;
+    font-size: 250%;
+    transition: 1s;
+    position:absolute;
+    bottom: 1px;
+}
+
+#allhead > h2:hover{
+    transform:translateY(30px);
+    transform:translateX(30px);
+}
+
+.allbody{
     position: absolute;
-    top:35%;
-    width:80%;
-    left:10%;
-    box-shadow: 0px 4px var(--thirdcolor);
+    top: 85%;
+    display:flex;
+    height:200%;
 }
-.vol{
-    background:var(--secondcolor);
-    width: 25%;
+
+.fpart{
     padding:10px;
-    text-align: center;
-    margin:5px;
-    display: inline-block;
-    border-radius: 5px;
-    /* height:200px; */
-    text-align: center;
-    color:var(--colorfortext);
+    margin:10px;
+    width:45%;
+    font-size: 150%;
 }
-    
-/* tradi the audio */
-#trad{
-    width:80%;
-    padding-top:20px;
+
+.phead{
+    background:rgb(20, 20, 73);
+    color:white;
+    width:42%;
+    left:3px;
+    top:-2%;
+    position: absolute;
+    text-align: center;
+    border-radius:5px;
+}
+
+.spart{
+    width:60%;
+    left:100px;
+    background:white;
+    margin:auto;
+}
+
+.example{
+    background:rgb(20, 20, 73);
+    color:white;
+    text-align: center;
+    width:75%;
+    margin:10px 10px 10px 0;
+    border-radius: 5px;
+}
+
+#SecondPage{
+    position: absolute;
+    top:230%;
+    background:white;
+    width:100%;
+    height:120%;
+    font-size: 150%;
+}
+
+#stories {
+    width: 30%;
+    padding:10px;
+    margin:10px;
     user-select: none;
 }
 
-#footer{
-    position:fixed;
-    bottom:2%;
-    padding-left:15px;
-    right:20%;
-    color:var(--headcolor);
+#stories > span {
+     padding:10px;
+     margin:10px;
 }
 
-#contacts > a:link{
-    text-decoration-line:none;
-}
-
-#smile{
-    font-size: 150%;
+footer{
+    display: flex;
+    gap:10%;
+    background:rgb(20, 20, 73);
+    height: 10%;
+    position: absolute;
+    width:99%;
     text-align: center;
+    padding:10px;
+}
+
+footer > a{
+    color: white;
 }
 
 
-/* phone screens */
-@media only screen and (max-width: 600px){
-   
-    .vol{
-        background:var(--secondcolor);
-        width: 92%;
-        padding:10px;
-        text-align: center;
-        margin:5px;
-        display: flex;
-        border-radius: 5px;
-        color:var(--headcolor)
-    }
 
-    #footer{
-        position: absolute;
-        top:-4%;
-        margin:auto;
-        color: var(--headcolor);
-    }
-
-    #conhead{
-        position:fixed;
-        margin-bottom:5px;
-        padding-bottom:5px;
-    }
-
-    .allcontent{
-        width:98%;
-        margin-top:20px;
-        position: absolute;
-        margin:auto;
-        left:1%;
-        top:40%;
-        padding:0;
-    }
-    
-    #sbody{
-        margin:auto;
-        padding:5px;
-        position: relative;
-        width:90%;
-        margin-top:2%;
-    }
-
-    .page{
-        margin:10px auto;
-    }
-
-    .hobbies{
-        padding:5px;
-        width:98%;
-        gap:15%;
-        display: flex;
-        margin:auto;
-        font-size:90%;
-        text-align:center;
-    }
-
-}
