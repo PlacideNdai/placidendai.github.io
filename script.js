@@ -14,7 +14,7 @@ function greetTime(){
 greetTime();
 
 // smile
-let emotearray = ["😃","😄","😁","😆","😅",'🤣','😂','🙂','🙃','😉','😊','😇','🥰','😍','🤩','😘','😗','😚','😙','🥲','😋','😛','😜','🤪','😝'];
+let emotearray = ["♟️","🎸","🎹","⌨️","🎨","🪴","🛹","🎱","🎮"];
 let emote = document.querySelector('.emote');
 
 
@@ -22,3 +22,5 @@ setInterval( ()=>{
     let randommote = Math.floor(Math.random() *emotearray.length);
     emote.innerHTML = emotearray[randommote];
 }, 1000);
+
+//  rotating the log

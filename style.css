@@ -1,132 +1,162 @@
 *{
     padding: 0;
-    margin: 0;
-    font-family: 'Teko', sans-serif;
+    margin:0;
+    font-family:  'Teko', sans-serif;
+    user-select: none;
+    /* -webkit-user-drag: none; */
 }
 
+body{
+    background:white;
+}
 body::-webkit-scrollbar{
-  display: none;
+    display:none;
 }
 
 #allhead{
+    position: absolute;
+    background: linear-gradient(to right, rgb(36, 36, 58) 50%, black 50%);
     color:white;
-    background: rgb(20, 20, 73);
-    position:absolute;
-    width:100%;
-    height:80%;
+    height: 100%;
+    width: 99%;
+    font-size: 170%;
+    padding-left:20px;
+    transition: 0.5s;
+    overflow-x: hidden;
+    user-select: none; 
     cursor: pointer;
 }
 
-#allhead > h1{
-    font-size:300%;
-    padding:10px;
+#allhead > p {
+    transform: translateX(20%);
+    transition: 1s;
+    width: 40%;
 }
 
 #allhead > h3{
-    font-size:200%;
-    padding:10px;
     color:green;
-    transition: 1s ;
 }
 
-#allhead > h3:hover{
-    color:yellow;
+.emote{
+    position: absolute;
+    left: 25%;
 }
 
-#allhead > p, #allhead > span{
-    padding:10px;
-    font-size: 150%;
+.paper{
+    position: absolute;
+    top:25%;
+    right:10%;
 }
 
-#allhead > h2{
-    padding:20px;
-    font-size: 250%;
-    transition: 1s;
-    position:absolute;
-    bottom: 1px;
-}
 
-#allhead > h2:hover{
-    transform:translateY(30px);
-    transform:translateX(30px);
-}
-
+/* all body */
 .allbody{
     position: absolute;
-    top: 85%;
-    display:flex;
-    height:200%;
+    top:100%;
+    margin: 10px;
+    font-size: 150%;
+    display: grid;
 }
 
-.fpart{
-    padding:10px;
-    margin:10px;
-    width:45%;
-    font-size: 150%;
+.firstpart{
+    width: 50%;
+}
+
+.log{
+    position:absolute;
+    top: 120%;
+    right:0;
+    transition: 2s;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.rotate{  
+    animation: infinite 20s ratate;
+}
+
+@keyframes ratate{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(355deg);
+    }
+}
+
+.music{
+    position: absolute;
+    height: 100%;
+    width: 50%;
 }
 
 .phead{
-    background:rgb(20, 20, 73);
-    color:white;
-    width:42%;
-    left:3px;
-    top:-2%;
-    position: absolute;
-    text-align: center;
-    border-radius:5px;
-}
-
-.spart{
-    width:60%;
-    left:100px;
-    background:white;
-    margin:auto;
-}
-
-.example{
-    background:rgb(20, 20, 73);
+    background: rgb(36, 36, 58);
     color:white;
     text-align: center;
-    width:75%;
-    margin:10px 10px 10px 0;
     border-radius: 5px;
 }
 
-#SecondPage{
-    position: absolute;
-    top:230%;
-    background:white;
-    width:100%;
-    height:120%;
-    font-size: 150%;
-}
-
-#stories {
-    width: 30%;
-    padding:10px;
-    margin:10px;
+.music > p{
     user-select: none;
 }
 
-#stories > span {
-     padding:10px;
-     margin:10px;
+.sample{
+    position: absolute;
+    top:40%;
+    right:0%;
+}
+
+
+img{
+    width: 20%;
+}
+
+.tree{
+    position: absolute;
+    top:240%;
+    -webkit-user-drag: none;
+    box-shadow: 0 10px rgb(101, 96, 47);
+}
+
+#secondpage{
+    padding-top:100%;
+    margin:10px;
+}
+
+#stories{
+    width:30%;
+}
+
+.flower{
+    position: absolute;
+    top:330%;
+    right:0;
+    box-shadow: 0 10px rgb(71, 66, 39);
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 footer{
+    background:rgb(36, 36, 58);
+    padding:10px;
+    color:white;
     display: flex;
     gap:10%;
-    background:rgb(20, 20, 73);
-    height: 10%;
-    position: absolute;
-    width:99%;
-    text-align: center;
-    padding:10px;
 }
+
 
 footer > a{
-    color: white;
+    color:white;
 }
-
-
-

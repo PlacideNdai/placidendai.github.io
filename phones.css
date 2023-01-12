@@ -1,89 +1,101 @@
 @media only screen and (max-width: 600px) {
-  
-    body{
-      width:99%;
-    }
-  
-    #allhead{
-      font-size:100%;
-      height: 80%;
-    }
-  
-    .emote{
-        position:absolute;
-        top:17.5%;
-        left: 50%;
-    }
-  
-    .allbody{
-        width:96%;
-        display: grid;
-        position: absolute;
-        height:auto;
-        top: 90%;
-    }
+  *{
+    padding:0;
+    margin: 0;
+  }
 
-    .fpart{
-        width:100%;
-        height: 350%;
-    }
+  body{
+    overflow-x: hidden;
+    width: 96%;
+  }
 
-    .firstsp{
-        position: absolute;
-        height: 100%;
-        margin-top:40px;
-    }
+ #allhead{
+    height:100%;
+    width:98vw;
+    background: rgb(36, 36, 58);
+    margin:auto;
+    padding-left:2%;
+ }
 
-    .phead{
-        width:100%;
-        margin-left:1%;
-        padding-top:0;
-    }
+ #allhead > P{
+    width:90%;
+    transform:translateX(0);
+    font-size: 80%;
+    padding-right:2%;
+ }
 
+ #allhead > h3{
+    position:absolute;
+    right:5%;
+    text-align: right;
+    padding-right:5%;
+ }
 
-    .spart{
-        position: absolute;
-        width:100%;
-        margin:auto;
-        height:300%;
-        top:750%;
-        left:1px;
-        display: grid;
-    }
+ .emote{
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%,-50%);
+ }
 
-    .secondsp{
-        border-top:1px solid black;
-        padding:5px;
-        margin:auto;
+ .paper{
+    display: none;
+ }
 
-    }
+ .allbody{
+    width:98%;
+    margin:auto;
+    padding-top:10px;
+    text-align: center;
+ }
 
-    .example{
-        top:0;
-        width:100%;
-        margin-left:1.5%;
-    }
+ .firstpart{
+    width:100%;
+    margin: auto;
+ }
 
-    .secondspan{
-        margin:auto;
-        padding-left:7%;
-    }
+ .log{
+    display: none;
+ }
 
+ .music{
+    width:95%;
+    text-align: center;
+ }
 
-    #SecondPage{
-        position: absolute;
-        top:300%;
-        width:94%;
-    }
+ .phead{
+    position: absolute;
+    width:100%;
+    left:4%;
+ }
 
-    #stories{
-        width:100%;
-    }
+ .sample{
+    top:25%;
+    left:3%;
+ }
 
-    footer{
-        width:100%;
-    }
- 
-  
-      
+ #secondpage{
+    width:98%;
+ }
+
+ #stories{
+    padding-top:160% ;
+    width:90%;
+    margin-bottom:2%;
+ }
+
+ .flower{
+    display: none;
+ }
+
+ .tree{
+    display: none;
+ }
+
+ footer{
+    width:98%;
+    position: absolute;
+    bottom:0;
+ } 
+    
 }
