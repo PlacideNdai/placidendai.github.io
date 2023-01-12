@@ -97,5 +97,10 @@
     position: absolute;
     bottom:0;
  } 
+
+ #song{
+   background:rgb(36, 36, 58);
+   border:rgb(36, 36, 58);
+ }
     
 }

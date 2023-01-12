@@ -24,3 +24,20 @@ setInterval( ()=>{
 }, 1000);
 
 //  rotating the log
+// music
+
+let btnsong = document.getElementById('song');
+let song = document.getElementById('backso');
+
+let playing = false;
+function play(){
+    if(playing == false){
+        btnsong.innerHTML = "⏸";
+        song.play();
+        playing = true;
+    }else if(playing == true){
+        song.pause();
+        playing  = false;
+        btnsong.innerHTML = "▶️";
+    }
+}
