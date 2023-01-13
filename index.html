@@ -13,7 +13,7 @@
     <title>notplacide</title>
 </head>
 <body>
-    <div id="allhead">
+    <div id="allhead" class="container-fluid">
         <h1>Placide</h1><br>
         <button  id="song" onclick="play()">▶️</button>
         <audio id="backso" loop src="backgroundso.wav"></audio>
@@ -50,7 +50,9 @@
                         No lyrics, I can't sing, but that can be something 
                         exciting to work on.<br>
                         <br>
-                        <audio src="traditionaldance.wav" controls controlsList="nodownload"> </audio><br>
+                        <audio src="traditionaldance.wav" id="trad"> </audio> 
+                        <button id="tradbtn" onclick="playtrad()">▶️</button>
+                        <br>
                         Name: Culture. <br>
                         Album: <a target="bandcamp" href="https://corruptedseed.bandcamp.com/album/village-painting">Village Painting.</a><br>
                         <br>
@@ -93,7 +95,7 @@
                     <strong> Drawing </strong> <br> 
                     I like drawing on my free time, not always because I always have something going on.
                     Still working on a way to display my work here without having to try so hard. So, soon my work
-                    will be displayed here, hopely.
+                    will be displayed here, I hope.
                     </p>
                 </span><br>
                 <span id="story">
