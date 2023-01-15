@@ -149,13 +149,15 @@ img{
 }
 
 footer{
-    background:rgb(36, 36, 58);
+    position:absolute;
+    bottom:0;
+    /* background:rgb(36, 36, 58); */
     padding:10px;
-    color:white;
+    /* color:white; */
     display: flex;
     gap:10%;
     bottom: 0;
-    /* margin:10px; */
+    margin:10px;
 }
 
 
