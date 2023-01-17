@@ -114,7 +114,7 @@ body::-webkit-scrollbar{
 
 .sample{
     position: absolute;
-    top:40%;
+    padding-top:35%;
     right:0%;
 }
 
@@ -125,7 +125,7 @@ img{
 
 .tree{
     position: absolute;
-    top:240%;
+    top:220%;
     -webkit-user-drag: none;
     box-shadow: 0 10px rgb(101, 96, 47);
 }
@@ -141,7 +141,7 @@ img{
 
 .flower{
     position: absolute;
-    top:330%;
+    top:300%;
     right:0;
     box-shadow: 0 10px rgb(71, 66, 39);
     user-select: none;
@@ -179,4 +179,3 @@ footer > a{
     border: white;
     font-size: 120%;
 }
-
