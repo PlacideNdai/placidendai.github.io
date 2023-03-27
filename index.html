@@ -1,140 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="phones.css">
     <meta charset="UTF-8">
-    <link rel="icon" href="resource/paper2.jpg">
+    <link rel="icon" href="resource/tcu_church.JPG">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>notplacide</title>
 </head>
 <body>
-    <div id="allhead" class="container-fluid">
-        <h1>Placide</h1><br>
-        <button  id="song" onclick="play()">▶️</button>
-        <audio id="backso" loop src="Resource/backgroundso.wav"></audio>
-        <h3 class="time">Good Morning!</h3><br>
-        <p class="aboutme">Hello!
-            <br>
-            Placide is my name, I like being with friends.<br>
-            I like learning new something  and challenging people, mostly my friends (games).<br>
-            I am a good listener, I believe. My hobbies are:
-            <br> Chess, Drawing,Taking photos, Coding, Playing with instruments.
-        </p>
-        <br>
-        <br>
-        <h2  style="font-style: normal;" class="emote">Smile</h2>
-
-        
-    </div>
-
-    <div class="allbody">
-
-        <div class="firstpart">
-            
-            
+    <div class="mainhead">
+        <!-- screen -->
+        <div class="screen">
+            <h1 id="wel">Welcome.</h1>
+            <h3 id="date">Today</h3>
+            <h4 id="timedis">12:00 pm</h4>
+            <p id="aboutm"></p><br>
+            <p id="aboutm " class="shows">Have a good day.</p>
            
-           <div class="firstspans">
-                
-                <div class="music">
-                    <h2 class="phead">Projects</h2>
-                    <p>
-                        <strong>- Music:</strong> <br>
-                        <br>
-                        "Why not dance it off." <br>
-                        I make soundtracks or folk, but I am not much experienced.
-                        No lyrics, I can't sing, but that can be something 
-                        exciting to work on.<br>
-                        <br>
-                        <audio src="Resource/traditionaldance.wav" id="trad"> </audio> 
-                        <button id="tradbtn" onclick="playtrad()">▶️</button>
-                        <br>
-                        Name: Culture. <br>
-                        Album: <a target="bandcamp" href="https://corruptedseed.bandcamp.com/album/village-painting">Village Painting.</a><br>
-                        <br>
-                    </p>
-                </div>
-             
-        
-                <div class="sample">
-                
-                    <h1 class="example">Sample</h1>
-                        <div class="secondspan">    
-                            <iframe class="bandca" style="border: 0; width: 320px; height: 400px;" 
-                            src="https://bandcamp.com/EmbeddedPlayer/album=3209323013/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/transparent=true/" 
-                            seamless><a href="https://corruptedseed.bandcamp.com/album/village-painting">Village Painting. by Placide</a>
-                            </iframe> 
-                        </div>
-                </div>
-            
-            </div>
         </div>
-
-
-
-
-        <!-- second page something diffent -->
-        <div id="secondpage">
-
-            <div id="stories">
-                <span id="story">
-                    <p>
-                   <strong> Chess </strong> <br>
-                    I was introduced to chess by a good friends <a target="_blank" href="https://www.instagram.com/iamshayne.1/">Shayne</a>, 
-                    in 2017 or 18. Fun fact, I won the first game when we played. <br>
-                    <br>
-                    If you want to play me, Challenge me here: <a   target="_blank" href="https://www.chess.com/member/placidendaisenga">Play!</a>  
-                    </p>
-                </span><br>
-                <span id="story">
-                    <p>
-                    <strong> Drawing </strong> <br> 
-                    I like drawing on my free time, not always because I always have something going on.
-                    Still working on a way to display my work here without having to try so hard. So, soon my work
-                    will be displayed here, I hope.
-                    </p>
-                </span><br>
-                <span id="story">
-                    <p>
-                    <strong> Flowers </strong> <br>
-                    I like the idea of having a farm and a garden with flowers. That is why I like plants and flowers.
-                    </p>
-                </span><br>
-                <span id="story">
-                    <p>
-                    <strong> Random </strong> <br>
-                   I am a Jesus's follower.<br>
-                   I love all.
-                </p>
-                
-                </span>
-
+        <!-- apps -->
+        <div class="apps">
             
-            </div>
+            <!-- <span></span> -->
+            <h2 class="titleh"> Highlighted</h2>
+            <span id="hlighed">
+                <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3630144583/size=small/bgcol=ffffff/linkcol=63b2cc/transparent=true/" seamless><a href="https://corruptedseed.bandcamp.com/album/its-history">It&#39;s history. by Placide</a></iframe>
+            </span>
+            <span>🎶</span>
+            <span>📷</span>
+            <span> CS</span>
+            <span> CS</span>
+            <span>CS</span>
         </div>
-
-
-
     </div>
 
-    <img class="tree" src="resource/tree.jpg" alt="">
-    <img class="log rotate" src="resource/log.jpg" alt="">
-    <img  class="paper" src="resource/paper2.jpg" alt="">
-    <img  class="flower " src="resource/flower.jpg" alt="">
+    <div class="below">
+        <span class="music">Music</span>
+        <span class="blog">Blog</span>
+        <span class="hlights">Hightlights</span>
+        <span class="contacts"> talk to me</span>
+    </div>
+    <div class="bottom">
+        <a href='https://www.instagram.com/notplacide/'><h3> Instagram</h3> </a>
+        <a href='https://www.facebook.com/profile.php?id=100087593511593'> <h3> Facebook</h3> </a>
+        <a href='https://www.linkedin.com/in/placide-ndaisenga-688a26186/'> <h3>Linkedin</h3></a>
+        <a href='https://twitter.com/placidendai'> <h3>Twitter</h3></a>
+    </div>
 
-    <footer> 
-        <a target="_blank" href="https://www.instagram.com/notplacide/"> Instagram</a>
-        <a target="_blank" href="https://www.linkedin.com/in/placide-ndaisenga-688a26186/"> LinkedIn</a>
-        <a target="_blank" href="https://twitter.com/placidendai"> Twitter</a>
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=100087593511593">Facebook</a>
-    </footer>
 
-
-    <script src="script.js"></script>
-
+    <script src="app.js"></script>
 </body>
 </html>
