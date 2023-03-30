@@ -43,7 +43,7 @@ setInterval(()=>{
         date.innerHTML = nowmod;
 },1000);
 
-let words = ["good", "glad","joyful","great","sweet","worm","blessed","strong","best","friendly"]
+let words = ["good", "glad","joyful","great","sweet","cool","blessed","strong","best","friendly","super","brilliant","superior","awesome","fabulous","wonderful","marvelous","profitable","noble","faithful","faultless","breathtaking","gentle","incredible"]
 
 let reads = 0;
 let ins = document.querySelector(".shows");
@@ -51,4 +51,5 @@ setInterval(()=>{
     let randomword = Math.floor(Math.random() * words.length);
     // console.log(words[randomword]);
     ins.innerHTML ="Have a "+ words[randomword] +" day!";
+    
 }, 100);
