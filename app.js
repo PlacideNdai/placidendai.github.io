@@ -1,55 +1,46 @@
-// js
-let music, blog, hlights, contact;
-music = document.querySelector(".music");
-blog = document.querySelector(".blog");
-hlights = document.querySelector(".hlights");
-contact = document.querySelector(".contacts");
-aboutm = document.getElementById('aboutm');
-// getting data from json.
 fetch("text.json")
-    .then( (res) => 
-         res.json())
-    .then( (data) =>{ 
-        music.innerHTML = data.music;
-        blog.innerHTML = data.blog;
-        hlights.innerHTML = data.hlights;
-        contact.innerHTML = data.contact;
-        aboutm.innerHTML = data.aboutme;
-    })
+.then((res)=> res.json())
+.then( (data) =>{
+    $('#aboutme').html(data.aboutme);
+})
 
-// blinking dot
-    let number  = 0;
-    let time, now, nowmod, timedis, date;
-    timedis = document.getElementById("timedis");
-    let days = ["Sunday","Monday", "Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    wel = document.getElementById('wel');
-    date = document.getElementById('date');
+// on hover the links
+let con, others,sites, contacts,prop,hobi;
+con = document.querySelector('.con');
+others = document.querySelector('.othersi');
+sites = document.querySelector('.sites');
+contacts = document.querySelector('.contact');
+prop = document.querySelector('.prop');
+hobi  = document.querySelector('.hobi');
 
-setInterval(()=>{
+// firsts
+prop.addEventListener('mouseover',()=>{
+    hobi.style.display = 'block';
+    sites.style.display ='none'
+    contacts.style.display = 'none';
+})
+hobi.addEventListener('mouseout',()=>{
+    setTimeout(()=>{hobi.style.display = 'none'},3000)
+})
 
-        if(number == 0){
-            wel.innerHTML = "Welcome";
-            number = 1;
-        } else if(number == 1){
-            wel.innerHTML = "Welcome.";
-            number = 0;
-        }
-// time
-        time = new Date();
-        now = time.toLocaleTimeString();
-        timedis.innerHTML = now;
-//  day
-        nowmod = time.toDateString();
-        date.innerHTML = nowmod;
-},1000);
+// second
+others.addEventListener('mouseover',()=>{
+    sites.style.display = 'block';
+    hobi.style.display ='none'
+    contacts.style.display = 'none';
+})
+sites.addEventListener('mouseout',()=>{
+    setTimeout(()=>{sites.style.display = 'none'},3000)
+})
 
-let words = ["good", "glad","joyful","great","sweet","cool","blessed","strong","best","friendly","super","brilliant","superior","awesome","fabulous","wonderful","marvelous","profitable","noble","faithful","faultless","breathtaking","gentle","incredible"]
+// third
+con.addEventListener('mouseover',()=>{
+    contacts.style.display = 'block';
+    hobi.style.display ='none';
+    sites.style.display ='none'
+})
+contacts.addEventListener('mouseout',()=>{
+    setTimeout(()=>{contacts.style.display = 'none'},3000)
+})
 
-let reads = 0;
-let ins = document.querySelector(".shows");
-setInterval(()=>{
-    let randomword = Math.floor(Math.random() * words.length);
-    // console.log(words[randomword]);
-    ins.innerHTML ="Have a "+ words[randomword] +" day!";
-    
-}, 100);
+

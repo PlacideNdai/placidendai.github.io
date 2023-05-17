@@ -1,91 +1,18 @@
 @media only screen and (max-width:1000px  ) {
-    .mainhead{
-        height:auto;
-        /* width: 100vw; */
-        /* background: rgb(20, 20, 40); */
+    #me > img{
+        width:50px;
+        height: auto;
+        margin: auto;
+    }
+
+    #me{
         display: inline;
-        overflow-x:hidden;
-        max-width: max-content;
-        padding: 0;
-        margin:0;
-        position:relative;
-        /* text-align: center; */
-    }  
-
-    
-    #aboutm{
-        margin:10px;
     }
 
-    #data{
-        margin:10px;
+    #aboutme{
+        width:70vw;
+        margin: auto;
     }
 
-    #timedis{
-        margin:10px;
-    }
-
-    #date{
-        margin:10px;
-    }
-
-    #wel{
-        margin-left:10px;
-        padding-top:10px;
-    }
-
-    .screen{
-        width: 100vw;
-        height: auto;
-        padding:0;
-        padding-bottom:20px;
-    }
-
-    .apps{
-        padding:0;
-        margin: 0;
-        height: 55vh;
-        width: 100vw;
-        background:rgb(20, 20, 40);
-    }
-
-    .titleh{
-        text-align: center;
-    }
-
-    .apps >span{
-        display: inline-block;
-    }
-
-    #hlighted{
-        text-align: center;
-        
-    }
-
-    .below{
-        max-width: fit-content;
-        grid-template-columns: auto auto;
-        /* grid-template-rows: 1fr 1fr; */
-        display:grid ;
-        /* padding-top:10px; */
-    }
-
-    .below > span{
-        display: inline-block;
-        /* padding-top:10px; */
-        width: 35vw;
-        height: auto;
-    }
-
-    .buttom > h3{
-        /* padding-left:10px; */
-        text-align: center;
-    }
-
-    .bottom{
-        position: sticky;
-        padding:0;
-        margin:0;
-        padding-top:10px;
-    }
 }
+
