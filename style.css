@@ -49,21 +49,21 @@ body{
     list-style:none;
 }
 
-#nav > span > span > li{
+#nav > span > span > a> li{
     margin: 1%;
     padding:1%;
 }
 
-#nav >span >span > li > a:link{
+#nav >span >span > a{
     color:white;
     text-decoration:none;
 }
 
-#nav >span >span > li > a:visited{
+#nav >span >span > a> li > a:visited{
     color:rgb(180, 180, 180);
 }
 
-#nav > span > span > li:hover{
+#nav > span > span > a> li:hover{
     background: #333;
     cursor: pointer;
 }
