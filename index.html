@@ -1,54 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="notplacide">
-    <meta name="placide website">
-    <link rel="icon" href="resource/tcu_church.JPG">
+    <link rel="shortcut icon" href="./resouces/ballme.JPG" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="phone.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>notplacide</title>
+    <title>NotPlacide</title>
+    <script src="app.js" type="module"></script>
 </head>
+
 <body>
-    <div class="heads">
-        <h2>Hi! I am Placide, this is my space.</h2>
+    <!-- head -->
+    <div id="head">
+        <!-- mainhead -->
+        <div id="mainhead">
+            <div class="profile commonhead clicked">
+                <h3>🔃 |</h3>
+            </div>
+            <div class="startTitle commonhead">
+                <h3 id="hobbies ">🎸 |</h3>
+            </div>
+            <div class="midTitle commonhead">
+                <h3 id="quickLink">🔗 |</h3>
+            </div>
+            <div class="endTitle commonhead">
+                <h3 id="contacts">📨 |</h3>
+            </div>
+            <div class="favStuff commonhead">
+                <h3 id="fav">Yeah!</h3>
+            </div>
+        </div>
     </div>
-    <nav id="nav">
-        <span class="projects">  <!-- projects-->
-            <p class="prop">Hobbies ↓</p>
-            <span class="hobi">
-                <a href="https://www.chess.com/member/placidendaisenga"> <li> CHESS </li> </a> </li>
-                <a href="https://corruptedseed.bandcamp.com/"> <li>Music </li> </a>
-               <a> <li>Photography</li></a>
-                <a> <li>Drawing</li></a>
+    <!-- body -->
+    <div id="body">
+        <!-- upper body -->
+        <div id="upperBody">
+            <span id="img">
+                <div id="">
+                    <img id="backimg" src="./resouces/methree.JPG" alt="hey, the photo is missing.">
+                </div>
             </span>
-        </span>
-        <span class=""> <!-- other website-->
-            <p class="othersi">Other Site ↓</p>
-            <span class="sites">
-                 <a href="https://changedspace.w3spaces.com/"> <li> Quick Math </li> </a></li>
+            <span id="bioDes">
+                <p id="bios">Wait, something is loading...</p>
             </span>
-        </span>
-        <span > <!--contact-->
-            <p class="con">Contacts ↓</p>
-            <span class="contact">
-                 <a href="https://www.instagram.com/notplacide/"> <li> Instagram </li></a>
-                 <a  href="https://twitter.com/placidendai"> <li>Twitter</li> </a>
-                 <a href="https://www.facebook.com/profile.php?id=100087593511593"> <li>Facebook</li> </a>
-                 <a href="https://www.linkedin.com/in/placide-ndaisenga-688a26186/"> <li>LinkedIn</li> </a>
-            </span>
-        </span>
-    </nav>
-    <div id="me">
-        <span>
-            <img src="resource/profile.JPG" alt=" will be up in a sec.">
-        </span>
-        
-        <p id="aboutme">this paragraph is loading...</p>
+        </div>
+        <!-- lower body -->
+        <div id="lowerbody">
+            <!-- titles and links as shortcut -->
+            <div id="titleLinks">
+                <p> <a href="https://corruptedseed.bandcamp.com/album/escaping-dejection">Music</a> </p>
+                <p>project#1</p>
+                <p>project#2</p>
+                <p>project#3</p>
+            </div>
+            <!-- pics -->
+            <div id="projects">
+                <span>
+                    <div id="iframes">
+                        <iframe style="border: 0; width: 98%; height: 90%;"
+                            src="https://bandcamp.com/EmbeddedPlayer/album=3414860015/size=large/bgcol=333333/linkcol=2ebd35/minimal=true/track=2099738487/transparent=true/"
+                            seamless><a href="https://corruptedseed.bandcamp.com/album/escaping-dejection">Escaping
+                                Dejection by Placide</a></iframe>
+                    </div>
+                </span>
+                <span>
+                    <p>in progress</p>
+                </span>
+                <span>
+                    <p>in progress</p>
+                </span>
+                <span>
+                    <p>in progress</p>
+                </span>
+            </div>
+        </div>
     </div>
-    <script src="app.js"></script>
+    <!-- footer -->
+    <div id="footer"></div>
 </body>
+
 </html>

@@ -1,18 +1,45 @@
-@media only screen and (max-width:1000px  ) {
-    #me > img{
-        width:50px;
-        height: auto;
-        margin: auto;
+@media only screen and (max-width:700px  ) {
+    #backimg{
+        height: 200px;
+        width:200px;
+        top:15%;
+        left:5%;
+        position: relative;
+        transform: translate(-50%,-50%);
     }
 
-    #me{
+    #upperBody{
+        height: 50vh;
         display: inline;
     }
 
-    #aboutme{
-        width:70vw;
-        margin: auto;
+    #upperBody > span {
+        height: 45vh;
+        width: 98vw;
+        text-align: center;
+        overflow-y: scroll;
+        font-size: 100%;
+        overflow: hidden;
+
     }
 
+    body{
+        overflow-y: scroll;
+    }
+
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-bottom:10px;
+    }
+
+    #projects > span{
+        width: 98vw;
+        height: 50vh;
+    }
+    
+    #projects > span>P {
+        padding-top:10px;
+    }
 }
 

@@ -1,95 +1,204 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    font-family: monospace;
+    font-family: fantasy;
 }
 
-body{
-    background: rgb(162, 162, 162);
+:root {
+    --mainColor: white;
+    --subColor: rgba(0, 0, 0, 0.575);
+    --textColor: white;
+    --lastColor: black;
+    --lastmainColor: linear-gradient(#000000af, #0000009f 50%, #880d0d22 95%);
+    --shadowColor: rgb(0, 0, 0);
+    --atwork: red;
+    --filled: rgb(22, 12, 65);
 }
 
-.heads{
-    background: #111;
-    text-align: center;
-    padding:1vh;
-    color:rgb(195, 195, 195);
+body {
+    background-image: url(./resouces/hallone.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    background-attachment: fixed;
 }
 
-#nav{
-    text-align: center;
-    gap:2vw;
-    height: 10vh;
-    display: flex;
-    background: #222;
-}
-
-#nav > span{
-    display: inline;
+#img>div {
     height: 100%;
-    width:35vw;
+    width: 100%;
+}
+
+#backimg {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    filter: brightness(80%);
+    margin: auto;
+    /* padding-top: 10px; */
+    user-select: none;
+    -webkit-user-drag: none;
+    transform-origin: center center;
+    animation: fallingLeaf infinite 40s linear;
+}
+
+@keyframes fallingLeaf {
+    0% {
+        transform: rotateZ(0deg);
+        border: rgb(255, 255, 255) dotted 5px;
+        padding: 10px;
+
+    }
+
+    25% {
+        transform: rotateZ(-25deg);
+    }
+
+    50% {
+        transform: rotateZ(0deg);
+        padding: 10px;
+        border: rgb(255, 0, 0) dotted 5px;
+    }
+
+
+    75% {
+        transform: rotateZ(25deg);
+        padding: 10px;
+        border: rgb(0, 255, 110) dotted 5px;
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+        padding: 10px;
+        border: rgb(21, 0, 255) dotted 5px;
+    }
+
+}
+
+
+
+#head {
+    background: var(--lastmainColor);
+    padding: 2px;
+    text-align: center;
+    height: 10vh;
     position: relative;
 }
 
-#nav > span > p{
-    background: inherit;
-    height: 5vh;
-    width:20vw;
-    margin-top: 5%;
-    color:red;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-}
-
-#nav > span > span{
-    display: none;
-    background:#222;
-    color:white;
-    border-radius: 5px;
-    list-style:none;
-}
-
-#nav > span > span > a> li{
-    margin: 1%;
-    padding:1%;
-}
-
-#nav >span >span > a{
-    color:white;
-    text-decoration:none;
-}
-
-#nav >span >span > a> li > a:visited{
-    color:rgb(180, 180, 180);
-}
-
-#nav > span > span > a> li:hover{
-    background: #333;
-    cursor: pointer;
-}
-
-
-#me{
+#mainhead {
+    position: relative;
     display: flex;
-    padding-left:20%;
+}
+
+.commonhead {
+    width: 20vw;
+    padding-top: 3vh;
+    color: var(--textColor);
+    text-shadow: 0.5px 1px 2px var(--shadowColor);
+}
+
+
+#head>div>div>h3 {
     text-align: center;
     margin: auto;
-    padding-top:10vh;
+    cursor: pointer;
+    font-size: 150%;
 }
 
-#me > span >  img{
-    width:200px;
-    border-radius:100%;
-    padding: 2%;
-    border: dotted 2px black;
-    margin: 5%;
-    filter:grayscale(0.6);
+
+#body {
+    background: var(--mainColor);
+    display: inline;
+    height: auto;
 }
 
-#aboutme{
-    padding-left:5%;
-    width:20vw;
-    font-size: 120%;
-    font-style: italic;
+/* upper part which is more of bio */
+#upperBody {
+    background: var(--subColor);
+    height: 40vh;
+    display: flex;
 }
 
+#upperBody>span {
+    width: 45vw;
+    height: 35vh;
+    background: var(--subColor);
+    box-shadow: 2px 2px 2px var(--shadowColor);
+    display: flex;
+    margin: auto;
+}
+
+#bioDes>p {
+    color: rgba(255, 255, 255, 0.801);
+    padding: 5% 0 0 5%;
+    overflow-y: scroll;
+    overflow: hidden;
+}
+
+#bioDes> p > a  {
+    text-decoration: none;
+    color:white;
+    font-size: 150%;
+}
+
+/* lower part which is more of the projects */
+#lowerbody {
+    background: var(--subColor);
+    height: 49.6vh;
+}
+
+#titleLinks {
+    height: 5vh;
+    display: flex;
+    background: var(--lastmainColor);
+}
+
+#titleLinks>p {
+    text-align: center;
+    background: var(--lastmainColor);
+    margin: auto;
+    color: var(--textColor);
+    background: inherit;
+    /* opacity: 0.7; */
+    cursor: pointer;
+}
+
+#titleLinks>p>a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+#projects {
+    display: flex;
+}
+
+#projects>span {
+    height: 35vh;
+    text-align: center;
+    background: var(--subColor);
+    box-shadow: 2px 2px 2px var(--shadowColor);
+    gap: 5px;
+    margin: auto;
+    width: 30vw;
+    /* border-radius: 5%; */
+}
+
+#projects>span>P {
+    padding: 20%;
+    color: var(--textColor);
+
+}
+
+#iframes {
+    background: var(--filled);
+    padding: 10px;
+    position: relative;
+    height: 93%;
+    /* border-radius: 5%; */
+}
