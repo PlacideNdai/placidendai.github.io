@@ -1,18 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: fantasy;
-}
-
-:root {
-    --mainColor: white;
-    --subColor: rgba(0, 0, 0, 0.575);
-    --textColor: white;
-    --lastColor: black;
-    --lastmainColor: linear-gradient(#000000af, #0000009f 50%, #880d0d22 95%);
-    --shadowColor: rgb(0, 0, 0);
-    --atwork: red;
-    --filled: rgb(22, 12, 65);
+    font-family: sans-serif;
 }
 
 body {
@@ -39,7 +28,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    filter: brightness(80%);
     margin: auto;
     /* padding-top: 10px; */
     user-select: none;
@@ -84,7 +72,8 @@ body {
 
 
 #head {
-    background: var(--lastmainColor);
+    background: black;
+    color:white;
     padding: 2px;
     text-align: center;
     height: 10vh;
@@ -99,8 +88,8 @@ body {
 .commonhead {
     width: 20vw;
     padding-top: 3vh;
-    color: var(--textColor);
-    text-shadow: 0.5px 1px 2px var(--shadowColor);
+    color: white;
+    text-shadow: 0.5px 5px 2px gray;
 }
 
 
@@ -113,50 +102,56 @@ body {
 
 
 #body {
-    background: var(--mainColor);
+    background: rgb(179, 174, 134);
     display: inline;
     height: auto;
 }
 
 /* upper part which is more of bio */
 #upperBody {
-    background: var(--subColor);
+    background: lightgray;
+    color: black;
     height: 40vh;
     display: flex;
 }
 
 #upperBody>span {
     width: 45vw;
+    color:black;
     height: 35vh;
-    background: var(--subColor);
+    background: lightgray;
     box-shadow: 2px 2px 2px var(--shadowColor);
     display: flex;
     margin: auto;
 }
 
 #bioDes>p {
-    color: rgba(255, 255, 255, 0.801);
-    padding: 5% 0 0 5%;
+    /* padding: 5% 0 0 5%; */
     overflow-y: scroll;
     overflow: hidden;
+    color: black;
+    width: 40vw;
+    font-size: large;
 }
 
 #bioDes> p > a  {
     text-decoration: none;
-    color:white;
+    color:black;
     font-size: 150%;
 }
 
 /* lower part which is more of the projects */
 #lowerbody {
-    background: var(--subColor);
+    background: lightslategray;
     height: 49.6vh;
 }
 
 #titleLinks {
+
     height: 5vh;
     display: flex;
-    background: var(--lastmainColor);
+    background: black;
+    color: white;
 }
 
 #titleLinks>p {
@@ -181,7 +176,7 @@ body {
 #projects>span {
     height: 35vh;
     text-align: center;
-    background: var(--subColor);
+    background: lightgray;
     box-shadow: 2px 2px 2px var(--shadowColor);
     gap: 5px;
     margin: auto;
@@ -196,9 +191,9 @@ body {
 }
 
 #iframes {
-    background: var(--filled);
+    background: white;
     padding: 10px;
     position: relative;
-    height: 93%;
+    height: 100%;
     /* border-radius: 5%; */
 }
