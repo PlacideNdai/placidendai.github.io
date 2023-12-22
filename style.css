@@ -1,17 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Just+Another+Hand&display=swap');
+
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family:'handlee', sans-serif ;
+    /* font-size: 120%; */
 }
 
 body {
-    background-image: url(./resouces/hallone.JPG);
+    background-image: url(./resouces/paperback.jpeg);
+    /* background-color: black; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     overflow: hidden;
     background-attachment: fixed;
+    width: 70vw;
+    margin: auto;
 }
 
 #img>div {
@@ -22,18 +28,15 @@ body {
 #backimg {
     height: 300px;
     width: 300px;
-    object-fit: cover;
-    position: relative;
-    border-radius: 100%;
+    /* object-fit: cover; */
+    background-position: center center;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     margin: auto;
-    /* padding-top: 10px; */
     user-select: none;
+    filter:sepia(40%);
     -webkit-user-drag: none;
-    transform-origin: center center;
-    animation: fallingLeaf infinite 40s linear;
 }
 
 @keyframes fallingLeaf {
@@ -72,12 +75,13 @@ body {
 
 
 #head {
-    background: black;
+    /* background: black; */
     color:white;
     padding: 2px;
     text-align: center;
     height: 10vh;
     position: relative;
+    width: 100%;
 }
 
 #mainhead {
@@ -94,22 +98,30 @@ body {
 
 
 #head>div>div>h3 {
+    padding: 10%;
+    background: black;
     text-align: center;
     margin: auto;
     cursor: pointer;
     font-size: 150%;
+    border-radius: 100%;
+}
+
+#head>div>div>h3:hover {
+    transition: .5s;
+    background:purple;
 }
 
 
 #body {
-    background: rgb(179, 174, 134);
+    background: transparent;
     display: inline;
     height: auto;
 }
 
 /* upper part which is more of bio */
 #upperBody {
-    background: lightgray;
+    background: transparent;
     color: black;
     height: 40vh;
     display: flex;
@@ -119,19 +131,17 @@ body {
     width: 45vw;
     color:black;
     height: 35vh;
-    background: lightgray;
-    box-shadow: 2px 2px 2px var(--shadowColor);
+    background: transparent;
     display: flex;
     margin: auto;
+    padding: 2%;
 }
 
 #bioDes>p {
-    /* padding: 5% 0 0 5%; */
     overflow-y: scroll;
-    overflow: hidden;
     color: black;
-    width: 40vw;
-    font-size: large;
+    width: 35vw;
+    font-size: 120%;
 }
 
 #bioDes> p > a  {
@@ -140,14 +150,21 @@ body {
     font-size: 150%;
 }
 
+#bioDes > p > ul > li{
+    margin-bottom:-3%;
+}
+
 /* lower part which is more of the projects */
 #lowerbody {
-    background: lightslategray;
     height: 49.6vh;
+    width: 95vw;
+    position: absolute;
+    left:50%;
+    top:75%;
+    transform:translate(-50%,-50%);
 }
 
 #titleLinks {
-
     height: 5vh;
     display: flex;
     background: black;
@@ -156,9 +173,7 @@ body {
 
 #titleLinks>p {
     text-align: center;
-    background: var(--lastmainColor);
     margin: auto;
-    color: var(--textColor);
     background: inherit;
     /* opacity: 0.7; */
     cursor: pointer;
@@ -176,24 +191,19 @@ body {
 #projects>span {
     height: 35vh;
     text-align: center;
-    background: lightgray;
-    box-shadow: 2px 2px 2px var(--shadowColor);
+    background: transparent;
     gap: 5px;
     margin: auto;
     width: 30vw;
-    /* border-radius: 5%; */
 }
 
 #projects>span>P {
     padding: 20%;
-    color: var(--textColor);
-
 }
 
 #iframes {
-    background: white;
-    padding: 10px;
+    background: transparent;
+    padding: 2px;
     position: relative;
     height: 100%;
-    /* border-radius: 5%; */
 }
