@@ -20,7 +20,7 @@
     }
 
     #head {
-        width: 100vw;
+        width: 98vw;
         background: black;
         position: absolute;
         top:0;
@@ -54,6 +54,7 @@
         height: 40vh;
         width: 100%;
         z-index: 3;
+        
     }
 
     #bioDes {
@@ -75,15 +76,17 @@
     #lowerbody {
         position: absolute;
         top: 120%;
+        width: 98vw;
     }
 
     #projects {
         display: grid;
+        width: 98%;
         grid-template-columns: repeat(1,1fr);
     }
 
     #projects>span {
-        width: 100%;
+        width: 94%;
         border: black dotted 2px;
     }   
 }
