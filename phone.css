@@ -50,7 +50,7 @@
     #bios{
         background:rgba(255, 166, 0, 0.179);
         position: inherit;
-        top: 35%;
+        top: 20%;
         height: 40vh;
         width: 100%;
         z-index: 3;
