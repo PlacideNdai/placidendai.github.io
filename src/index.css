@@ -1,0 +1,185 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 60vw;
+  text-align: center;
+  margin: auto;
+  color: rgb(47, 47, 47);
+}
+
+*{
+  padding: 0;
+  margin: 3px;
+  color: rgb(79, 79, 79);
+  font-family: monospace;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#heads {
+  display: flex;
+}
+
+#heads>div {
+  margin: auto;
+  display: flex;
+}
+
+#links {
+  margin: auto;
+  gap: 2vw;
+  user-select: none;
+}
+
+#links>span>h3 {
+  cursor: pointer;
+
+}
+
+#aboutmeholder{
+  padding: 0;
+  margin: 0;
+}
+
+#logosholder{
+  height: 100px;
+  /* background: red; */
+  /* max-height: 100px; */
+  /* display: flex; */
+}
+
+#logos{
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  object-fit: cover;
+  clear: both;
+}
+
+#home{
+  cursor: pointer;
+}
+
+#social > p{
+  margin-top:10px;
+}
+
+#footer {
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 40vh;
+}
+
+#footer>span {
+  margin: auto;
+  cursor: pointer;
+}
+
+#body{
+  display: flex;
+}
+
+#body > div {
+  margin: auto;
+}
+
+#mephoto{
+  position: relative;
+  top:50%;
+  left:60%;
+  transform: translate(-10%,45%);
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+
+#aboutme{
+  user-select: none;
+  width: 25vw;
+  padding-left: 10%;
+  top:50vh;
+  left:40vw;
+  transform: translate(0.1vw,5vw);
+}
+
+
+
+/* ------------ phones ------------------ */
+
+@media only screen and (max-width: 1500px) {
+  body{
+    padding: 0;
+    margin: 0;
+    overflow:scroll ;
+    overflow: hidden;
+    width: 100vw;
+  }
+
+  #logos{
+    position: relative;
+    padding-top:15px;
+  }
+
+  #heads{
+    width: 100vw;
+  }
+
+  #body{
+    display: inline;
+    position: relative;
+    
+  }
+
+  #mephoto{
+    position: relative;
+    left:0;
+    top:5%;
+    height: 200px;
+    width:200px;
+    padding-bottom: 100px;
+    margin: auto;
+  }
+
+  #aboutme{
+    padding: 10px;
+    margin: auto;
+  }
+
+  #footer{
+    position:fixed;
+    width: 100vw;
+    height: 20vh;
+    top:80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body{
+    padding: 0;
+    margin: 0;
+    display: inline;
+  }
+
+  #imgholder{
+    margin: auto;
+    height: 25vh;
+  }
+
+  #mephoto{
+    height: 150px;
+    width: 150px;
+    top:-10vh;
+    margin: auto;
+  }
+
+  #aboutme{
+    padding-top:25px;
+    width: 90vw;
+  }
+}
