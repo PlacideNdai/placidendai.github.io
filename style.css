@@ -121,6 +121,10 @@ body {
     padding: 2%;
 }
 
+#bioDes{
+    max-height: fit-content;
+}
+
 #bioDes>p {
     overflow-y: scroll;
     color: black;
