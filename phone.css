@@ -35,6 +35,7 @@
         width: 100vw;
         left:0;
         top:11vh;
+        max-height: fit-content;
         position: absolute;
     }
 

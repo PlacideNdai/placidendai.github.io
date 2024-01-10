@@ -101,10 +101,12 @@ body {
     background: transparent;
     display: inline;
     height: auto;
+    max-height: fit-content;
 }
 
 /* upper part which is more of bio */
 #upperBody {
+    max-height: fit-content;
     background: transparent;
     color: black;
     height: 40vh;
