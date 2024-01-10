@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Just+Another+Hand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'handlee', sans-serif ;
+    /* font-size: 120%; */
+}
+
+body {
+    overflow: hidden;
+    width: 55vw;
+    margin: auto;
+}
+
+#backimg {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background-position: center center;
+    display: flex;
+    margin: auto;
+    filter:sepia(40%);
+    -webkit-user-drag: none;
+    object-fit: cover;
+}
+
+@keyframes fallingLeaf {
+    0% {
+        transform: rotateZ(0deg);
+        border: rgb(255, 255, 255) dotted 5px;
+        padding: 10px;
+
+    }
+
+    25% {
+        transform: rotateZ(-25deg);
+    }
+
+    50% {
+        transform: rotateZ(0deg);
+        padding: 10px;
+        border: rgb(255, 0, 0) dotted 5px;
+    }
+
+
+    75% {
+        transform: rotateZ(25deg);
+        padding: 10px;
+        border: rgb(0, 255, 110) dotted 5px;
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+        padding: 10px;
+        border: rgb(21, 0, 255) dotted 5px;
+    }
+
+}
+
+
+
+#head {
+    /* background: black; */
+    color:white;
+    padding: 2px;
+    text-align: center;
+    height: 10vh;
+    position: relative;
+    width: 100%;
+}
+
+#mainhead {
+    position: relative;
+    display: flex;
+}
+
+.commonhead {
+    width: 20vw;
+    text-shadow: 0.5px 5px 2px gray;
+}
+
+
+#head>div>div>h3 {
+    padding: 10%;
+    color:black;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    font-size: 150%;
+    border-bottom: 1px black solid;
+}
+
+#head>div>div>h3:hover {
+    transition: .5s;
+    background:rgb(178, 213, 196);
+}
+
+
+#body {
+    background: transparent;
+    display: inline;
+    height: auto;
+}
+
+/* upper part which is more of bio */
+#upperBody {
+    background: transparent;
+    color: black;
+    height: 40vh;
+    display: flex;
+}
+
+#upperBody>span {
+    width: 45vw;
+    color:black;
+    height: 35vh;
+    background: transparent;
+    display: flex;
+    margin: auto;
+    padding: 2%;
+}
+
+#bioDes>p {
+    overflow-y: scroll;
+    color: black;
+    width: 35vw;
+    font-size: 120%;
+}
+
+#bioDes> p > a  {
+    text-decoration: none;
+    color:black;
+    font-size: 150%;
+}
+
+#bioDes > p > ul > li{
+    margin-bottom:-3%;
+}
+
+/* lower part which is more of the projects */
+#lowerbody {
+    height: 49.6vh;
+    width: 95vw;
+    position: absolute;
+    left:50%;
+    top:75%;
+    transform:translate(-50%,-50%);
+}
+
+#titleLinks {
+    height: 5vh;
+    display: flex;
+    background: white;
+}
+
+#titleLinks>p {
+    text-align: center;
+    margin: auto;
+    background: inherit;
+    /* opacity: 0.7; */
+    cursor: pointer;
+}
+
+#titleLinks>p>a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+#projects {
+    display: flex;
+}
+
+#projects>span {
+    height: 35vh;
+    text-align: center;
+    background: transparent;
+    gap: 5px;
+    margin: auto;
+    width: 30vw;
+}
+
+#projects>span>P {
+    padding: 20%;
+}
+
+#iframes {
+    background: transparent;
+    padding: 2px;
+    position: relative;
+    height: 100%;
+}
