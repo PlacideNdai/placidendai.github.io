@@ -37,19 +37,19 @@ allHover.forEach(element => {
             // reload or replace the text with the bio
             Bio();
         } else if (element == allHover[1]) {
-            console.log("hobbies");
+            
             // hobbies
             hobbies_fun(bio);
         } else if (element == allHover[2]) {
-            console.log("quick links");
+           
             // qiock links to other sites
             quicklinks_fun(bio);
         } else if (element == allHover[3]) {
-            console.log("contants");
+            
             // contants
             contacts_fun(bio);
         } else if (element == allHover[4]) {
-            console.log("yeah!");
+            
             // yaeh which should be random stuff
             yeah_fun(bio);
         }
@@ -80,7 +80,6 @@ function yeah_fun(bio){
 
 function contacts_fun(bio){
     bio.innerHTML = data_details.contacts;
-    messageConsole(bio);
 }
 /// ignore
 function testing(readBio) {

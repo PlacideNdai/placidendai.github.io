@@ -7,6 +7,10 @@
     /* font-size: 120%; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow: hidden;
     width: 55vw;

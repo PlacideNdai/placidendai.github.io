@@ -6,6 +6,10 @@
         margin: auto;
     }
 
+    html{
+        scroll-behavior:smooth;
+    }
+
     #imgholder{
         background: transparent;
         width: 50vw;
