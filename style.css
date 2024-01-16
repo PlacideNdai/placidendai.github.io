@@ -129,3 +129,7 @@ body {
 #projects > span:hover{
     box-shadow: 5px 5px 2px rgb(231, 231, 231) ;
 }
+
+#twoparagraph > a{
+    text-decoration: none;
+}
