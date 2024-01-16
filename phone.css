@@ -1,93 +1,39 @@
 @media only screen and (max-width:700px) {
     #backimg {
-        height: 200px;
-        width: 200px;
-        background: transparent;
-        margin: auto;
-    }
-
-    html{
-        scroll-behavior:smooth;
-    }
-
-    #imgholder{
-        background: transparent;
-        width: 50vw;
-        top:0;
-        display: flex;
-        position: absolute;
+        height: 150px;
+        width: 150px;
     }
 
     #head {
-        width: 98vw;
-        background: white;
-        position: absolute;
-        top:0;
-        left:0;
-        overflow-x: hidden;
+        height: 5vh;
     }
 
-    #head>div>div>h3:hover {
-       background: rgb(178, 213, 196);
-       transition: 2s;
-       border-radius: 0;
-    }
-
-    #upperBody {
-        background-color: transparent;
-        height: 80vh;
+    #body{
         width: 100vw;
-        left:0;
-        top:11vh;
-        max-height: fit-content;
-        position: absolute;
     }
 
-    #upperBody>span {
-        display: flex;
-    }
-
-    #bios{
-        background:rgba(255, 166, 0, 0.179);
-        position: inherit;
-        top: 35%;
-        height: 40vh;
-        width: 100%;
-        z-index: 3;
-    }
-
-    #bioDes {
-        width: 100vw;
-        top:25%;
-        position: absolute;
-        text-align: center;
-        max-height: fit-content;
-    }
-
-    #bioDes>P {
-        padding-top:5%;
-        width: 94vw;
-        margin: auto;
+    #head>div>div:hover {
+        background: rgb(175, 175, 175);
+        padding: 5px;
     }   
 
-    body {
-        overflow-y: scroll;
-    }
+    #upperBody {
+        display: inline;
+    } 
 
     #lowerbody {
-        position: absolute;
-        top: 120%;
-        width: 98vw;
+        padding-bottom: 30px;
     }
 
     #projects {
-        display: grid;
-        width: 98%;
-        grid-template-columns: repeat(1,1fr);
+        display: inline;
     }
 
     #projects>span {
-        width: 94%;
-        border: black dotted 2px;
+        width: 80vw;
+        padding-top: 20px;
     }   
+    #bioDes > p > ul > li{
+        max-width: 80vw;
+    }
 }
