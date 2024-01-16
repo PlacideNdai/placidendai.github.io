@@ -37,3 +37,12 @@
         max-width: 80vw;
     }
 }
+
+/* something for the tablet */
+
+@media only screen and (max-width:1200px) {
+    #upperBody {
+        display: inline;
+    } 
+
+}
