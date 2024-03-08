@@ -1,48 +1,77 @@
-@media only screen and (max-width:700px) {
-    #backimg {
+@media only screen and (max-width: 700px) {
+    body{
+        background: #333;
+        color: white;
+    }
+
+    #header{
+        background: #222;
+        font-size: 60%;
+        height: 60px;
+    }
+
+    #logo{
+    
+    }
+
+    #logo > h1{
+        font-size: 140%;
+    }
+
+    #logo > img{
+        display: none;
+    }
+
+    #aboutme{
+        display: inline;
+    }
+
+    #main{
+        text-align: center;
+    }
+
+    .meimg{
         height: 150px;
         width: 150px;
+        margin: auto;
     }
 
-    #head {
-        height: 5vh;
+    #aboutme > p {
+        top: 10vh;
+        width: 90%;
     }
 
-    #body{
-        width: 100vw;
+    #services{
+        text-align: center;
     }
 
-    #head>div>div:hover {
-        background: rgb(175, 175, 175);
-        padding: 5px;
-    }   
-
-    #upperBody {
+    #hmain{
         display: inline;
-    } 
-
-    #lowerbody {
-        padding-bottom: 30px;
+        width: fit-content;
+        padding: 0;
     }
 
-    #projects {
-        display: inline;
+    #hmain > div{
+        width: 90%;
+        padding: 0;
+        margin: auto;
+        background: #333;
     }
 
-    #projects>span {
-        width: 80vw;
-        padding-top: 20px;
-    }   
-    #bioDes > p > ul > li{
-        max-width: 80vw;
+    #hmain > div > p > a {
+        color: white;
     }
-}
 
-/* something for the tablet */
+    #hmain > div > img{
+        filter: brightness(0.2);
+    }
 
-@media only screen and (max-width:1200px) {
-    #upperBody {
-        display: inline;
-    } 
+    #hmain > div > iframe{
+        text-align: center;
+    }
 
+    #contacts > span > a {
+        text-decoration: none;
+        color:white;
+    }
 }

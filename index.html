@@ -1,84 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="./resouces/ballme.JPG" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="phone.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NotPlacide</title>
-    <script src="app.js" type="module"></script>
+    <title>loading...</title>
 </head>
-
-<body>
-    <!-- head -->
-    <div id="head">
-        <!-- mainhead -->
-        <div id="mainhead">
-            <div class="profile commonhead clicked">
-                <h3>Profile</h3>
-            </div>
-            <div class="startTitle commonhead">
-                <h3 id="hobbies ">Hobbies</h3>
-            </div>
-            <div class="midTitle commonhead">
-                <h3 id="quickLink">🔗</h3>
-            </div>
-            <div class="endTitle commonhead">
-                <h3 id="contacts">Contacts</h3>
-            </div>
-            <div class="favStuff commonhead">
-                <h3 id="fav">Yeah!</h3>
-            </div>
-        </div>
-    </div>
-    <!-- body -->
-    <div id="body">
-        <!-- upper body -->
-        <div id="upperBody">
-            <span id="img">
-                <div id="imgholder">
-                    <img id="backimg" src="./resouces/mine.JPG" alt="hey, the photo is missing.">
-                </div>
-            </span>
-            <span id="bioDes">
-                <p id="bios">Wait, something is loading...</p>
-            </span>
-        </div>
-        <!-- lower body -->
-        <div id="lowerbody">
-            <!-- titles and links as shortcut -->
-            <div id="titleLinks">
-                <p> <a href="https://corruptedseed.bandcamp.com/album/escaping-dejection">Music</a> </p>
-                <p> <a href="https://tictactoewithfriends.w3spaces.com/index.html">Tic Tac Toe</a> </p>
-                <p>project#2</p>
-                <p>project#3</p>
-            </div>
-            <!-- pics -->
-            <div id="projects">
-                <span>
-                    <div id="iframes">
-                        <iframe style="border: 0; width: 100%; height: 42px;"
-                            src="https://bandcamp.com/EmbeddedPlayer/album=3414860015/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
-                            seamless><a href="https://corruptedseed.bandcamp.com/album/escaping-dejection">Escaping
-                                Dejection by Placide</a></iframe>
-                    </div>
-                </span>
-                <span>
-                    <p id="twoparagraph" > <a href="https://tictactoewithfriends.w3spaces.com/index.html">Tic Tac Toe with friends only</a> </p>
-                </span>
-                <span>
-                    <p>in progress</p>
-                </span>
-                <span>
-                    <p>in progress</p>
-                </span>
-            </div>
-        </div>
-    </div>
-    <!-- footer -->
-    <div id="footer"></div>
+<body onload="redirect()">
+    <script>
+        function redirect(){
+            window.location.href = "./personal"
+        }
+    </script>
 </body>
-
 </html>

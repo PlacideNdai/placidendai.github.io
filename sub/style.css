@@ -1,0 +1,70 @@
+#hmain {
+    margin: auto;
+    font-size: 120%;
+    border: solid 1px gray;
+    /* width: 50vw; */
+    width: fit-content;
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hmain>div {
+    width: 400px;
+    background: white;
+    padding:10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#hmain>div>* {
+    margin: auto;
+}
+
+#hmain > div > h1 {
+    color: rgb(39, 114, 194);
+    cursor: pointer;
+}
+
+#hmain>div>img {
+    height: 200px;
+}
+
+
+#ads{
+    font-size: 60%;
+    color: gray;
+}
+
+#cmain{
+    height: fit-content;
+}
+
+#contacts{
+
+    width: fit-content;
+    margin: auto;
+}
+
+#contacts > span{
+    padding: 10px;
+    margin: 10px;
+    /* margin: auto; */
+    border:1px gray solid;
+    position: relative;
+    top: 10px;
+    display: flex;
+    /* background: white; */
+    height: 50px;
+    font-size: 150%;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+}
+
+#contacts > span > a{
+    margin: auto;
+    text-decoration: none;
+}

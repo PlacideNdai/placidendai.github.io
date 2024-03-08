@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    /* transition: 2.5s; */
+}
+
+#header{
+    height: fit-content;
+    display: flex;
+    background:  rgb(39, 114, 194);
+}
+
+body{
+    background:rgb(229, 229, 229);
+}
+
+#logo {
+    display: flex;
+    /* margin: auto; */
+    background:lightseagreen;
+    color:white;
+    padding:10px;
+    cursor: pointer;
+}
+
+#logo > img{
+    height: 30px;
+    border-radius: 100%;
+    width: 50px;
+    object-fit: contain;
+    padding: 10px;
+    filter: grayscale();
+}
+
+#logo > h1{
+    font-size: 30px;
+    margin: auto;
+}
+
+#links{
+    margin: auto;
+}
+
+#links > a {
+    text-decoration: none;
+    font-size: 150%;
+    padding:10px;
+    color: white;
+}
+
+.meimg{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+    position: relative;
+    top:50px;
+}
+
+#main{
+    padding:10px;
+    height: fit-content;
+}
+
+#aboutme{
+    display: flex;   
+    border: 1px gray solid;
+    border-top:none;
+    border-left:none;
+    border-right: none;
+}
+
+#aboutme > img{
+    margin: auto;
+    border: solid black 1px;
+    padding:10px;
+    background: rgb(229, 229, 229);
+}
+
+
+#aboutme > p{
+    position: relative;
+    top:35vh;
+    margin: auto;
+    font-size: 120%;
+    width: 40vw;
+    border:1px solid gray;
+    padding:5px;
+    border-top: none;
+    border-right:none ;
+    border-bottom: none;
+}
+
+#services{
+    position: relative;
+    top: 35vh;
+    padding:10px;
+    width:40vh;
+    border:1px solid gray;
+    padding:5px;
+    border-top: none;
+    border-right:none ;
+    border-bottom: none;
+}
+
+#services > * {
+    font-size: 120%;
+}
+
+#services > button {
+    background: rgb(39, 114, 194);
+    padding: 10px;
+    margin: auto;
+    color: white;
+
+}
