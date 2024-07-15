@@ -13,3 +13,7 @@ function fivver(){
 function freelancer(){
     window.location.href = "https://www.freelancer.com/u/notplacide?frm=notplacide&sb=t"
 }
+
+function redirect(){
+    window.location.href = "https://placidendai.web.app";
+}
